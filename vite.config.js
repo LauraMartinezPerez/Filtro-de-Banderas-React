@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   server: { watch: { usePolling: true }, open: true, },
   /* server:{open: true,}, */
-  base: "/Lau-Ejercicio-Evaluacion-Inermedia-React/",
+  base: "/Lau-Ejercicio-Evaluacion-Intermedia-React/",
 })
