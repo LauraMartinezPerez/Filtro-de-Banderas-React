@@ -2,7 +2,7 @@ import "../scss/App.scss";
 import ListCountries from "./ListCountries";
 import countriesData from "../Services/data.json";
 import Filters from "./Filters";
-import { useState } from "/react";
+import { useState } from "react";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
     const filteredCountries = countriesData.filter((country) => {
         console.log(country);
-        setFilterValue.includes.
+        return country.name.common.includes(filterValue);
     })
 
     return (
@@ -26,7 +26,7 @@ function App() {
         </header>
         <main>
             <Filters onChangeFilter={changeFilterValue}/>
-            <ListCountries countries={countriesData}/>
+            <ListCountries countries={filteredCountries}/>
         </main>
         </>
     )
